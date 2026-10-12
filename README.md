@@ -2,6 +2,8 @@
 
 Минимальный веб-клиент MAX на **Vite + React + TypeScript**. Реализует сценарий тестового задания: подключение по `idInstance` и `apiTokenInstance`, создание чата по телефону, отправка текста и получение ответа.
 
+**[Открыть приложение](https://max-green-chat.vercel.app)** · [Исходники](https://github.com/andreevqt/max-green-chat) · [Проверки CI](https://github.com/andreevqt/max-green-chat/actions)
+
 ## Запуск
 
 Требуется Node.js 24 LTS и npm.
