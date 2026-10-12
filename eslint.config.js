@@ -3,6 +3,8 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
+import fsdBoundaries from "./config/eslint/fsd-boundaries.js";
+
 export default tseslint.config(
   { ignores: ["dist", "node_modules", "artifacts"] },
   js.configs.recommended,
@@ -19,5 +21,10 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
+  },
+  {
+    files: ["src/**/*.{ts,tsx}"],
+    plugins: { fsd: fsdBoundaries },
+    rules: { "fsd/imports": "error" },
   },
 );
